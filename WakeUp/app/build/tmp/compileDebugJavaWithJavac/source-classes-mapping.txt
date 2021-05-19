@@ -1,0 +1,10 @@
+com/example/wakeup/BuildConfig.java
+ com.example.wakeup.BuildConfig
+com/example/wakeup/databinding/FragmentSecondBinding.java
+ com.example.wakeup.databinding.FragmentSecondBinding
+com/example/wakeup/databinding/ActivityMainBinding.java
+ com.example.wakeup.databinding.ActivityMainBinding
+com/example/wakeup/databinding/ContentMainBinding.java
+ com.example.wakeup.databinding.ContentMainBinding
+com/example/wakeup/databinding/FragmentFirstBinding.java
+ com.example.wakeup.databinding.FragmentFirstBinding
