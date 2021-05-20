@@ -8,6 +8,7 @@ import android.widget.Button;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import com.example.wakeup.R;
 import java.lang.NullPointerException;
@@ -19,10 +20,15 @@ public final class FragmentFirstBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
+  public final RecyclerView alarmList;
+
+  @NonNull
   public final Button buttonFirst;
 
-  private FragmentFirstBinding(@NonNull ConstraintLayout rootView, @NonNull Button buttonFirst) {
+  private FragmentFirstBinding(@NonNull ConstraintLayout rootView, @NonNull RecyclerView alarmList,
+      @NonNull Button buttonFirst) {
     this.rootView = rootView;
+    this.alarmList = alarmList;
     this.buttonFirst = buttonFirst;
   }
 
@@ -53,13 +59,19 @@ public final class FragmentFirstBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.alarm_list;
+      RecyclerView alarmList = rootView.findViewById(id);
+      if (alarmList == null) {
+        break missingId;
+      }
+
       id = R.id.button_first;
       Button buttonFirst = rootView.findViewById(id);
       if (buttonFirst == null) {
         break missingId;
       }
 
-      return new FragmentFirstBinding((ConstraintLayout) rootView, buttonFirst);
+      return new FragmentFirstBinding((ConstraintLayout) rootView, alarmList, buttonFirst);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

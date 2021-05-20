@@ -1,6 +1,6 @@
 package com.example.wakeup
 
-import java.sql.Time
-import java.util.*
+import java.io.Serializable
 
-data class Alarm(val time: Time, val status: Boolean, val repeat: String, val title: String)
+data class Alarm(val time: String, val status: Boolean, val repeat: String, val title: String) :
+    Serializable

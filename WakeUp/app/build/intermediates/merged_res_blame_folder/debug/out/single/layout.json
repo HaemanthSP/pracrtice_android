@@ -8,6 +8,10 @@
         "source": "/home/haemanth/work/practice/practice_android/WakeUp/app/src/main/res/layout/activity_main.xml"
     },
     {
+        "merged": "/home/haemanth/work/practice/practice_android/WakeUp/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/alarm_card.xml",
+        "source": "/home/haemanth/work/practice/practice_android/WakeUp/app/src/main/res/layout/alarm_card.xml"
+    },
+    {
         "merged": "/home/haemanth/work/practice/practice_android/WakeUp/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_second.xml",
         "source": "/home/haemanth/work/practice/practice_android/WakeUp/app/src/main/res/layout/fragment_second.xml"
     },

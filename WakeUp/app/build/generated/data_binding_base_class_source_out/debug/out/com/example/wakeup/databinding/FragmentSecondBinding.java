@@ -6,6 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TimePicker;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
@@ -20,16 +21,30 @@ public final class FragmentSecondBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
+  public final TimePicker addAlarmPickTime;
+
+  @NonNull
+  public final EditText addAlarmRepeat;
+
+  @NonNull
+  public final EditText addAlarmTitle;
+
+  @NonNull
   public final Button buttonSecond;
 
   @NonNull
-  public final EditText textviewSecond;
+  public final ConstraintLayout constraintLayout;
 
-  private FragmentSecondBinding(@NonNull ConstraintLayout rootView, @NonNull Button buttonSecond,
-      @NonNull EditText textviewSecond) {
+  private FragmentSecondBinding(@NonNull ConstraintLayout rootView,
+      @NonNull TimePicker addAlarmPickTime, @NonNull EditText addAlarmRepeat,
+      @NonNull EditText addAlarmTitle, @NonNull Button buttonSecond,
+      @NonNull ConstraintLayout constraintLayout) {
     this.rootView = rootView;
+    this.addAlarmPickTime = addAlarmPickTime;
+    this.addAlarmRepeat = addAlarmRepeat;
+    this.addAlarmTitle = addAlarmTitle;
     this.buttonSecond = buttonSecond;
-    this.textviewSecond = textviewSecond;
+    this.constraintLayout = constraintLayout;
   }
 
   @Override
@@ -59,19 +74,38 @@ public final class FragmentSecondBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.addAlarm_pickTime;
+      TimePicker addAlarmPickTime = rootView.findViewById(id);
+      if (addAlarmPickTime == null) {
+        break missingId;
+      }
+
+      id = R.id.addAlarm_repeat;
+      EditText addAlarmRepeat = rootView.findViewById(id);
+      if (addAlarmRepeat == null) {
+        break missingId;
+      }
+
+      id = R.id.addAlarm_title;
+      EditText addAlarmTitle = rootView.findViewById(id);
+      if (addAlarmTitle == null) {
+        break missingId;
+      }
+
       id = R.id.button_second;
       Button buttonSecond = rootView.findViewById(id);
       if (buttonSecond == null) {
         break missingId;
       }
 
-      id = R.id.textview_second;
-      EditText textviewSecond = rootView.findViewById(id);
-      if (textviewSecond == null) {
+      id = R.id.constraintLayout;
+      ConstraintLayout constraintLayout = rootView.findViewById(id);
+      if (constraintLayout == null) {
         break missingId;
       }
 
-      return new FragmentSecondBinding((ConstraintLayout) rootView, buttonSecond, textviewSecond);
+      return new FragmentSecondBinding((ConstraintLayout) rootView, addAlarmPickTime,
+          addAlarmRepeat, addAlarmTitle, buttonSecond, constraintLayout);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

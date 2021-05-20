@@ -60,8 +60,16 @@
         "source": "/home/haemanth/work/practice/practice_android/WakeUp/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png"
     },
     {
+        "merged": "/home/haemanth/work/practice/practice_android/WakeUp/app/build/intermediates/res/merged/debug/drawable_alarm_card_bg.xml.flat",
+        "source": "/home/haemanth/work/practice/practice_android/WakeUp/app/src/main/res/drawable/alarm_card_bg.xml"
+    },
+    {
         "merged": "/home/haemanth/work/practice/practice_android/WakeUp/app/build/intermediates/res/merged/debug/menu_menu_main.xml.flat",
         "source": "/home/haemanth/work/practice/practice_android/WakeUp/app/src/main/res/menu/menu_main.xml"
+    },
+    {
+        "merged": "/home/haemanth/work/practice/practice_android/WakeUp/app/build/intermediates/res/merged/debug/layout_alarm_card.xml.flat",
+        "source": "/home/haemanth/work/practice/practice_android/WakeUp/app/src/main/res/layout/alarm_card.xml"
     },
     {
         "merged": "/home/haemanth/work/practice/practice_android/WakeUp/app/build/intermediates/res/merged/debug/layout_content_main.xml.flat",

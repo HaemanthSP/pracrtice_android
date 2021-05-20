@@ -1658,6 +1658,7 @@ drawable abc_textfield_search_activated_mtrl_alpha
 drawable abc_textfield_search_default_mtrl_alpha
 drawable abc_textfield_search_material
 drawable abc_vector_test
+drawable alarm_card_bg
 drawable avd_hide_password
 drawable avd_show_password
 drawable btn_checkbox_checked_mtrl
@@ -1790,6 +1791,14 @@ id action_text
 id actions
 id activity_chooser_view_content
 id add
+id addAlarm_pickTime
+id addAlarm_repeat
+id addAlarm_title
+id alarm_list
+id alarm_repeat
+id alarm_status
+id alarm_time
+id alarm_title
 id alertTitle
 id aligned
 id all
@@ -1833,6 +1842,7 @@ id clip_vertical
 id clockwise
 id collapseActionView
 id confirm_button
+id constraintLayout
 id container
 id content
 id contentPanel
@@ -2109,7 +2119,6 @@ id textinput_helper_text
 id textinput_placeholder
 id textinput_prefix_text
 id textinput_suffix_text
-id textview_second
 id time
 id title
 id titleDividerNoCustom
@@ -2202,6 +2211,7 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_main
+layout alarm_card
 layout content_main
 layout custom_dialog
 layout design_bottom_navigation_item

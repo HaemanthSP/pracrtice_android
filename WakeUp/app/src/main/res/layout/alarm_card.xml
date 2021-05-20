@@ -23,14 +23,14 @@
             android:layout_height="19dp"
             android:layout_marginStart="8dp"
             android:text="TextView"
-            app:layout_constraintBottom_toTopOf="@+id/alarm_date"
+            app:layout_constraintBottom_toTopOf="@+id/alarm_repeat"
             app:layout_constraintStart_toEndOf="@+id/alarm_time"
             app:layout_constraintTop_toTopOf="@+id/alarm_time"
             app:layout_constraintVertical_chainStyle="spread"
             tools:text="@tools:sample/lorem" />
 
         <TextView
-            android:id="@+id/alarm_date"
+            android:id="@+id/alarm_repeat"
             android:layout_width="195dp"
             android:layout_height="18dp"
             android:layout_marginStart="8dp"
@@ -59,15 +59,15 @@
             tools:text="@tools:sample/date/hhmm" />
 
         <Switch
-            android:id="@+id/status"
+            android:id="@+id/alarm_status"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="37dp"
-            android:layout_marginBottom="36dp"
+            android:splitTrack="false"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/alarm_date"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintStart_toEndOf="@+id/alarm_repeat"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:checked="true" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
