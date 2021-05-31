@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TimePicker
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.fragment.findNavController
 import com.example.wakeup.databinding.FragmentSecondBinding
 
@@ -37,10 +38,10 @@ class SecondFragment : Fragment() {
             val timeFormated = formatTime(binding.addAlarmPickTime)
             val alarm = Alarm(timeFormated, true, binding.addAlarmRepeat.text.toString(), binding.addAlarmTitle.text.toString())
 
-            val bundle = Bundle()
-            bundle.putSerializable("alarm_data", alarm)
+            val action = SecondFragmentDirections.actionSecondFragmentToFirstFragment()
+            action.alarmData = alarm
 
-            findNavController().navigate(R.id.action_SecondFragment_to_FirstFragment, bundle)
+            NavHostFragment.findNavController(this).navigate(action)
         }
     }
 

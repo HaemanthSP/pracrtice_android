@@ -33,10 +33,16 @@ class FirstFragment : Fragment() {
 
         alarm_list = AlarmAdaptor(binding.root.context)
 
-        if (arguments?.getSerializable("alarm_data") != null) {
-            val alarm: Alarm = arguments?.get("alarm_data") as Alarm
+        val alarm = FirstFragmentArgs.fromBundle(requireArguments()).alarmData
+//        if (arguments?.getSerializable("alarm_data") != null) {
+//            val alarm: Alarm = arguments?.get("alarm_data") as Alarm
+//            alarm_list.addAlarm(alarm)
+//        }
+
+        if (alarm != null) {
             alarm_list.addAlarm(alarm)
         }
+
         return binding.root
     }
 

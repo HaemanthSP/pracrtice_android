@@ -14,6 +14,18 @@
         <action
             android:id="@+id/action_FirstFragment_to_SecondFragment"
             app:destination="@id/SecondFragment" />
+        <argument
+            android:name="alarm_data"
+            app:nullable="true"
+            android:defaultValue="@null"
+            app:argType="com.example.wakeup.Alarm"
+            />
+
+        <argument
+            android:name="score"
+            android:defaultValue="0"
+            app:argType="integer"/>
+
     </fragment>
     <fragment
         android:id="@+id/SecondFragment"

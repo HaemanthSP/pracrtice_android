@@ -1,16 +1,22 @@
 com/example/wakeup/databinding/FragmentSecondBinding.java
  com.example.wakeup.databinding.FragmentSecondBinding
-com/example/wakeup/SecondFragmentDirections.java
- com.example.wakeup.SecondFragmentDirections
 com/example/wakeup/databinding/AlarmCardBinding.java
  com.example.wakeup.databinding.AlarmCardBinding
 com/example/wakeup/databinding/ActivityMainBinding.java
  com.example.wakeup.databinding.ActivityMainBinding
 com/example/wakeup/databinding/ContentMainBinding.java
  com.example.wakeup.databinding.ContentMainBinding
+com/example/wakeup/FirstFragmentDirections.java
+ com.example.wakeup.FirstFragmentDirections
 com/example/wakeup/databinding/FragmentFirstBinding.java
  com.example.wakeup.databinding.FragmentFirstBinding
 com/example/wakeup/BuildConfig.java
  com.example.wakeup.BuildConfig
-com/example/wakeup/FirstFragmentDirections.java
- com.example.wakeup.FirstFragmentDirections
+com/example/wakeup/FirstFragmentArgs.java
+ com.example.wakeup.FirstFragmentArgs
+ com.example.wakeup.FirstFragmentArgs$1
+ com.example.wakeup.FirstFragmentArgs$Builder
+com/example/wakeup/SecondFragmentDirections.java
+ com.example.wakeup.SecondFragmentDirections
+ com.example.wakeup.SecondFragmentDirections$1
+ com.example.wakeup.SecondFragmentDirections$ActionSecondFragmentToFirstFragment
